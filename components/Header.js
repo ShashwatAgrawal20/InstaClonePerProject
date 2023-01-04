@@ -31,7 +31,6 @@ const Header = () => {
             alt="insta logo"
           />
         </div>
-      
         {/* Middle Side (For the searchBar) */}
         <div className="max-w-xs">
           <div className="relative mt-1 p-3 rouded-md">
@@ -50,7 +49,7 @@ const Header = () => {
 
         <div className="flex items-center justify-end space-x-4">
           <HomeIcon className="navBtn" />
-          <Bars4Icon className="h-6 md:hidden cursor-pointer" />
+          <Bars4Icon className="h-6 md:hidden flex-shrink-0 cursor-pointer" />
           <div className="relative navBtn">
             <PaperAirplaneIcon className="navBtn -rotate-45" />
             <div className="absolute -top-0 -right-2 text-xs w-5 bg-red-500 rounded-full flex items-center justify-center animate-pulse">
@@ -64,7 +63,7 @@ const Header = () => {
           <img
             src="/next.svg"
             alt="avatar logo"
-            className="h-10 p-1 bg-red-500 rounded-full cursor-pointer w-10"
+            className="h-10 p-1 bg-red-500 rounded-full hidden cursor-pointer w-10 md:inline-flex"
           />
         </div>
       </div>
