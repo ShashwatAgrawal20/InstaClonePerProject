@@ -63,7 +63,7 @@ const Header = () => {
           <img
             src="/next.svg"
             alt="avatar logo"
-            className="h-10 p-1 bg-red-500 rounded-full hidden cursor-pointer w-10 md:inline-flex"
+            className="h-10 bg-red-500 rounded-full cursor-pointer w-10"
           />
         </div>
       </div>
