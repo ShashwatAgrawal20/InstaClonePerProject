@@ -19,10 +19,7 @@ const Stories = () => {
     // Implemented faker js might implemented real data later
     <div className="flex space-x-2 p-6 bg-white mt-8 border-gray-200 border rounded-sm overflow-x-scroll scrollbar-thin scrollbar-thumb-black">
       {session && (
-        <Story
-          image={session.user.image}
-          username={session?.user.username}
-        />
+        <Story image={session.user.image} username={session?.user.username} />
       )}
       {Suggestions.map((profile) => (
         <Story

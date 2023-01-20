@@ -2,7 +2,7 @@ import { signOut, useSession } from "next-auth/react";
 
 const MiniProfile = () => {
   const { data: session } = useSession();
-  console.log(session);
+  // console.log(session);
   return (
     <div className="flex items-center justify-between mt-14 ml-10">
       {/* Gonna fetch data from the actual user logged in */}
@@ -17,7 +17,9 @@ const MiniProfile = () => {
       </div>
 
       {/* Just for now gonna only be renderd when we are logged in */}
-      <button onClick={signOut} className="text-blue-400 text-sm font-semibold">Sign Out</button>
+      <button onClick={signOut} className="text-blue-400 text-sm font-semibold">
+        Sign Out
+      </button>
     </div>
   );
 };
